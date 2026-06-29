@@ -7,7 +7,6 @@ export default function AppLayout() {
       <Tabs.Screen name="devices" options={{ title: 'Devices' }} />
       <Tabs.Screen name="settings" options={{ title: 'Settings' }} />
       <Tabs.Screen name="profile" options={{ title: 'Profile' }} />
-      <Tabs.Screen name="devices/[id]" options={{ href: null }} />
     </Tabs>
   );
 }

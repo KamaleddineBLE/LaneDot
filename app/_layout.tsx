@@ -22,7 +22,7 @@ function AuthGate() {
   useEffect(() => {
     if (loading) return;                       // wait for the first check
     const inApp = segments[0] === '(app)';
-    if (session && !inApp) router.replace('/(app)/map');   // logged in → app
+    if (session && !inApp) router.replace('/(app)/tabs');
     if (!session && inApp) router.replace('/(auth)/login'); // logged out → auth
   }, [session, loading, segments]);
 
